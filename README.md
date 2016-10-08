@@ -1,2 +1,2 @@
-# CalendarTest
-test for hackathon so i can deploy
+# calendar
+MHacks 8 Intelligent Calendar
