@@ -25,9 +25,6 @@ function toggleSignIn() {
       var token = result.credential.accessToken;
       // The signed-in user info.
       var user = result.user;
-      // [START_EXCLUDE]
-      document.getElementById('quickstart-oauthtoken').textContent = token;
-      // [END_EXCLUDE]
     }).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
@@ -75,6 +72,10 @@ window.onload = function() {
 	toggleSignIn();
 	initApp();
 }
+
+
+
+
 
 createEventArray("wilson");
 
