@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 var db = firebase.database();
 
 var provider = new firebase.auth.GoogleAuthProvider();
-
+provider.addScope('https://www.googleapis.com/auth/plus.login');
 window.onload = function() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 	  // This gives you a Google Access Token. You can use it to access the Google API.
