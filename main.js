@@ -13,6 +13,8 @@ firebase.initializeApp(config);
 var db = firebase.database();
 
 var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth().signInWithRedirect(provider);
+/*
 provider.addScope('https://www.googleapis.com/auth/plus.login');
 window.onload = function() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -32,6 +34,7 @@ window.onload = function() {
 	  // ...
 	});
 };
+*/
 
 function collectSurveys() {
 
